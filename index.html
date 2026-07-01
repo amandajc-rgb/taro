@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Conceitual Interativo</title>
+   
+</head>
+<body>
+<link rel="stylesheet" href="style.css">
+    <div class="map-container">
+        <h1>Meu Mapa Conceitual</h1>
+       
+        <div class="concept-wrapper">
+            <div class="concept-card main-concept" onclick="toggleDetails('desc-principal')">
+                <div class="image-placeholder">
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-PfMzzWFtoAMaA1QBXiUnar5Kp3gvX59yYAApk_iqzb-Gtp7K6ZF0x5cK&s=10" alt="Pinguim">
+                </div>
+                <h3>Conceito Principal</h3>
+                <p id="desc-principal" class="details">Este é o tema central do seu mapa conceitual.</p>
+            </div>
+
+            <div class="sub-concepts">
+               
+                <div class="concept-card" onclick="toggleDetails('desc-sub1')">
+                    <div class="image-placeholder">
+ <img src="pic_trulli.jpg" alt="Italian Trulli">
+                    </div>
+                    <h4>Subconceito A</h4>
+                    <p id="desc-sub1" class="details">Ramificação importante do tema principal.</p>
+                </div>
+
+                <div class="concept-card" onclick="toggleDetails('desc-sub2')">
+                    <div class="image-placeholder">
+ <img src="pic_trulli.jpg" alt="Italian Trulli">
+                    </div>
+                    <h4>Subconceito B</h4>
+                    <p id="desc-sub2" class="details">Outra ramificação ou exemplo prático do tema.</p>
+                </div>
+
+            </div>
+        </div>
+    </div> <script src="script.js"></script>
+</body>
+</html>
